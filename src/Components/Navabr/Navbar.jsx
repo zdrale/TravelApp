@@ -1,4 +1,4 @@
-import '../../../dist/css/NavBar.css';
+import '../../../dist/css/Navbar.css';
 import { BiLogoMediumOld } from 'react-icons/bi'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { PiDotsNineBold } from 'react-icons/pi'
