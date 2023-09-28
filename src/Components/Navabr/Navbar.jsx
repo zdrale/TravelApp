@@ -3,7 +3,12 @@ import { BiLogoMediumOld } from 'react-icons/bi'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { PiDotsNineBold } from 'react-icons/pi'
 import { useState } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
+
 function Navbar() {
+
     const [navBar, setNavBar] = useState('menu');
 
     const showNavBar = () => {
@@ -22,15 +27,23 @@ function Navbar() {
 
             <div className={navBar}>
                 <ul>
+
                     <li className='navList'>
-                        Destination
+                        <Link to="destinations" smooth={true} duration={500} offset={-80} >
+                            Destinations
+                        </Link>
                     </li>
+
                     <li className='navList'>
-                        About us
-                    </li> <li className='navList'>
-                        Testimonial
-                    </li> <li className='navList'>
-                        Gallery
+                        <Link to="aboutus" smooth={true} duration={500} offset={-150}>
+                            About us
+                        </Link>
+                    </li>
+
+                    <li className='navList'>
+                        <Link to="testimonials" smooth={true} duration={500} offset={-80}>
+                            Testimonial
+                        </Link>
                     </li>
                 </ul>
                 <AiFillCloseCircle className='icon closeIcon' onClick={closeNavBar} />

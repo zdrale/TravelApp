@@ -48,42 +48,7 @@ const destinations = [
         location: 'Indian Ocean',
         rating: 4.4
     },
-    {
-        id: 5,
-        img: image5,
-        name: 'Seychelles island',
-        location: 'Indian Ocean',
-        rating: 4.4
-    },
-    {
-        id: 5,
-        img: image5,
-        name: 'Seychelles island',
-        location: 'Indian Ocean',
-        rating: 4.4
-    },
-    {
-        id: 5,
-        img: image5,
-        name: 'Seychelles island',
-        location: 'Indian Ocean',
-        rating: 4.4
-    },
-    {
-        id: 5,
-        img: image5,
-        name: 'Seychelles island',
-        location: 'Indian Ocean',
-        rating: 4.4
-    }
-    ,
-    {
-        id: 5,
-        img: image5,
-        name: 'Seychelles island',
-        location: 'Indian Ocean',
-        rating: 4.4
-    }
+
 ]
 
 function Destinations() {
@@ -91,7 +56,7 @@ function Destinations() {
         Aos.init({ duration: 2000 })
     }, [])
     return (
-        <div className='destination section container'>
+        <div className='destination section container' id='destinations'>
             <div className='secContainer'>
                 <div className='secTitle'>
                     <span className='redText' data-aos="fade-up">

@@ -8,21 +8,48 @@ import Reviews from './Components/Reviews/Reviews';
 import Questions from './Components/Questions/Questions';
 import Subscribe from './Components/Subscribe/Subscribe';
 import Footer from './Components/Footer/Footer';
+import { Element } from 'react-scroll'
 
 function App() {
-
   return (
     <>
       <div>
-        <Navbar />
-        <Home />
-        <Middle />
-        <Destinations />
-        <Portfolio />
-        <Reviews />
-        <Questions />
-        <Subscribe />
-        <Footer />
+        <Element>
+          <Navbar />
+        </Element>
+
+        <Element>
+          <Home />
+        </Element>
+
+        <Element>
+          <Middle />
+        </Element>
+
+        <Element name="destinations">
+          <Destinations />
+        </Element>
+
+        <Element name='aboutus'>
+          <Portfolio />
+        </Element>
+
+        <Element name='testimonials'>
+          <Reviews />
+        </Element>
+
+        <Element>
+          <Questions />
+        </Element>
+
+        <Element>
+          <Subscribe />
+        </Element>
+
+        <Element>
+          <Footer />
+        </Element>
+
       </div>
 
     </>
