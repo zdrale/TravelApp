@@ -1,5 +1,4 @@
 import Navbar from './Components/Navabr/Navbar';
-import '../dist/css/App.css';
 import Home from './Components/Home/Home';
 import Middle from './Components/Middle/Middle';
 import Destinations from './Components/Destinations/Destinations';
@@ -9,6 +8,8 @@ import Questions from './Components/Questions/Questions';
 import Subscribe from './Components/Subscribe/Subscribe';
 import Footer from './Components/Footer/Footer';
 import { Element } from 'react-scroll';
+import '../dist/css/App.css';
+
 
 
 function App() {
